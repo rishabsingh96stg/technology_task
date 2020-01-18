@@ -66,8 +66,8 @@ class ProfilePage extends Component {
   }
 
   userInfoSubmit = () => {
-    if(this.state.fields.designation.length===0 || this.state.fields.address=='' || this.state.fields.pincode=='' 
-    || this.state.fields.city=='' || this.state.fields.state=='' || this.state.fields.employer==''){
+    if(this.state.fields.designation.length===0 && this.state.fields.address=='' && this.state.fields.pincode=='' 
+    && this.state.fields.city=='' && this.state.fields.state=='' && this.state.fields.employer==''){
               swal("Warning!", "Please fill all fields !", "warning");
    }
     let data = {...this.state.fields}
