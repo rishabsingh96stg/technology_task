@@ -66,16 +66,19 @@ class ProfilePage extends Component {
   }
 
   userInfoSubmit = () => {
-    if(this.state.fields.designation.length===0 && this.state.fields.address=='' && this.state.fields.pincode=='' 
-    && this.state.fields.city=='' && this.state.fields.state=='' && this.state.fields.employer==''){
+    if(this.state.fields.designation=='' || this.state.fields.address=='' || this.state.fields.pincode=='' 
+    || this.state.fields.city=='' || this.state.fields.state=='' || this.state.fields.employer==''){
               swal("Warning!", "Please fill all fields !", "warning");
    }
+   else{
     let data = {...this.state.fields}
     data.picture = this.state.image
     console.log(data)
     window.localStorage.removeItem('profileData')
     window.localStorage.setItem('profileData', JSON.stringify(data))
     this.setState({ profileData: data, modal:false })
+  
+   }  
   }
 
   toggle = () => {
