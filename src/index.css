@@ -1,0 +1,32 @@
+@font-face{
+  font-family: August;
+  font-weight: 800;
+  src:url(/Fonts/AugustSans-75Bold.ttf)
+}
+@font-face{
+  font-family: August;
+  font-weight: 400;
+  src:url(/Fonts/AugustSans-55Regular.ttf)
+}
+@font-face{
+  font-family: August;
+  font-weight: 200;
+  src:url(/Fonts/AugustSans-45Light.ttf)
+}
+
+
+
+body {
+  background-color: #fdfdfd;
+  margin: 0;
+  font-family: "August";
+  color: #404040;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
